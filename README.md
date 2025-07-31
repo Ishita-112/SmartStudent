@@ -1,18 +1,31 @@
-## Getting Started
+# SmartStudent
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A console-based Student Management System built with Java, JDBC, and MySQL.
+
+## Features
+- Admin Login (Username: admin, Password: admin123)
+- Add/View/Update/Delete Student Records
+- Search Students by Department
+- Statistics (optional)
+
+## Technologies
+- MySQL 8.x
+- JDBC
+
+## Setup
+1. Run `student.sql` in MySQL to create the database and table.
+2. Configure `DatabaseConnection.java` with your MySQL credentials.
+3. Add the MySQL JDBC driver `.jar` to your project classpath.
+4. Run `Main.java` to launch the app.
 
 ## Folder Structure
+SmartStudent/
+Main.java
+DatabaseConnection.java
+Student.java
+StudentDAO.java
+AdminService.java
+UI.java
+README.md
+student.sql
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
